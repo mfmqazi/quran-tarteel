@@ -4,9 +4,11 @@
 
 /* ─── CUSTOM FONTS ──────────────────────────────────────── */
 @font-face {
-  font-family: 'QCF4Tajweed';
-  src: url('../vendor/quranic-universal-library/app/assets/fonts/QCF4_TAJWEED_RULES-Regular.woff2') format('woff2');
+  font-family: 'IndoPakNastaleeq';
+  src: url('https://verses.quran.foundation/fonts/quran/hafs/nastaleeq/indopak/indopak-nastaleeq-waqf-lazim-v4.2.1.woff2') format('woff2');
   font-display: swap;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ─── DESIGN TOKENS ──────────────────────────────────────── */
@@ -63,8 +65,8 @@
 
   /* Fonts */
   --ff:              'Inter', system-ui, sans-serif;
-  --ff-arabic:       'Amiri', 'Traditional Arabic', serif;
-  --ff-tajweed:      'QCF4Tajweed', 'Amiri', serif;
+  --ff-arabic:       'IndoPakNastaleeq', 'Amiri', 'Traditional Arabic', serif;
+  --ff-tajweed:      'IndoPakNastaleeq', 'Amiri', serif;
 
   --transition:      0.2s ease;
 }
@@ -393,7 +395,7 @@ body.sb-open .overlay { display: block; }
   font-size: 18px; font-weight: 800; flex-shrink: 0;
 }
 .hero-text { flex: 1; }
-.hero-ar { font-family: var(--ff-arabic); font-size: 36px; font-weight: 700; line-height: 1.6; }
+.hero-ar { font-family: var(--ff-arabic); font-size: 40px; font-weight: 400; line-height: 2.0; }
 .hero-en { font-size: 20px; font-weight: 600; opacity: 0.9; margin-top: 4px; }
 .hero-meta { font-size: 13px; opacity: 0.7; margin-top: 4px; }
 .hero-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
@@ -406,10 +408,11 @@ body.sb-open .overlay { display: block; }
 .bismillah {
   text-align: center;
   font-family: var(--ff-arabic);
-  font-size: 28px;
+  font-size: 32px;
   color: var(--text-muted);
-  padding: 18px 16px 8px;
+  padding: 24px 16px 4px;
   direction: rtl;
+  line-height: 2.4;
 }
 .bismillah.hidden { display: none; }
 
@@ -524,10 +527,11 @@ body.mode-listen .verse-card.playing { opacity: 1; }
 .verse-arabic {
   direction: rtl; text-align: right;
   font-family: var(--ff-arabic);
-  font-size: 28px;
-  line-height: 2.1;
+  font-size: 30px;
+  line-height: 2.6;
   color: var(--text);
   letter-spacing: 0;
+  word-spacing: 4px;
 }
 body.tajweed-on .verse-arabic { font-family: var(--ff-tajweed); }
 
