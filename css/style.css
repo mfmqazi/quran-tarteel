@@ -869,7 +869,6 @@ body.sb-hidden .player-bar { left: 0; }
   .pi-ayah { display: none; }
   .drawer { width: 100%; }
   .verse-list { padding: 12px 14px 20px; }
-  .topbar-actions .tbar-btn:nth-child(4) { display: none; }
   .mode-right { gap: 4px; }
   .ctrl-select { font-size: 11px; padding: 6px 6px; }
 }
